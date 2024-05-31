@@ -7,9 +7,9 @@ static const Block blocks[] = {
 // internet connection
 	{"",                            "~/.local/bin/dwmnet",		                                                5,			0},
 // cpu usage
-	{"^c#bb9af7^ ^c#a9b1d6^",      "top -b -n1 | grep \"Cpu(s)\" | awk '{printf \"%5.2f\%\", $1 + $2}'",		0.5,		0},
+	{"^c#bb9af7^ ^c#a9b1d6^",      "top -b -n1 | grep \"Cpu(s)\" | awk '{printf \"%5.2f\%\", $1 + $2}'",		1,  		0},
 // ram usage
-	{"^c#bb9af7^ ^c#a9b1d6^",      "free -m | awk '/^Mem/ { print $3\"MB/\"$2\"MB\" }' | sed s/i//g",		    0.5,		0},
+	{"^c#bb9af7^ ^c#a9b1d6^",      "free -m | awk '/^Mem/ { print $3\"MB/\"$2\"MB\" }' | sed s/i//g",		    1,  		0},
 // hdd usage
 	{"^c#bb9af7^ ^c#a9b1d6^",      "df -h | awk 'FNR == 5 {print $4\"B\"}'",					                1,			0},
 // packages to update
