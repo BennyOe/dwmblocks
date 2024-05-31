@@ -3,9 +3,9 @@ static const Block blocks[] = {
 	/*Icon*/			/*Command*/									/*Update Interval*/	/*Update Signal*/
 // battery
     //{"^c#61afef^  ^c#abb2bf^",	 "cat /sys/class/power_supply/BAT1/capacity | awk '{print $0\"%\"}'",		60,			0},
-    {"",	                        "~/.local/bin/battery",		6,			0},
+    /* {"",	                        "~/.local/bin/battery",		6,			0}, */
 // internet connection
-	/* {"",                            "~/.local/bin/dwmnet",		                                                5,			0}, */
+	{"",                            "~/.local/bin/dwmnet",		                                                5,			0},
 // cpu usage
 	{"^c#c0caf5^ ^c#a9b1d6^",      "top -b -n1 | grep \"Cpu(s)\" | awk '{printf \"%5.2f\%\", $1 + $2}'",		1,			0},
 // ram usage
