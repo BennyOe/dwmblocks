@@ -11,7 +11,7 @@ static const Block blocks[] = {
 // ram usage
 	{"^c#bb9af7^ ^c#a9b1d6^",      "free -m | awk '/^Mem/ { print $3\"MB/\"$2\"MB\" }' | sed s/i//g",		    2,			0},
 // hdd usage
-	{"^c#bb9af7^ ^c#a9b1d6^",      "df -h | awk 'FNR == 5 {print $4\"B\"}'",					                10,			0},
+	{"^c#bb9af7^ ^c#a9b1d6^",      "df -h | awk 'FNR == 2 {print $4\"B\"}'",					                10,			0},
 // packages to update
 	{"^c#7aa2f7^  ^c#a9b1d6^",	    "checkupdates | wc -l | awk '{print $0 \" pkg\"}'",				            3600,		1},
 // date
